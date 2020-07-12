@@ -1,0 +1,10 @@
+Module
+  name: game_imbuing
+  description: imbuing
+  author: Vincent#1766 on discord
+  website: http://otclient.ovh
+  autoload: true
+  sandboxed: true
+  scripts: [ imbuing ]
+  @onLoad: init()
+  @onUnload: terminate()
