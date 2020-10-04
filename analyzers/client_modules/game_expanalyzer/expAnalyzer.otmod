@@ -1,0 +1,11 @@
+Module
+  name: game_expAnalyzer
+  description: Contains the exp analyzer
+  author: Aurelion
+  autoload: true
+  sandboxed: true
+  scripts: [expAnalyzer]
+  @onLoad: init()
+  @onUnload: terminate()
+  dependencies:
+    - game_interface

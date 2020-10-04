@@ -1,0 +1,120 @@
+MiniWindow
+  id: expAnalyzerWindow
+  icon: icon
+  !text: tr('Exp/h')
+  color: #8F8F8F
+  height: 110
+  width: 110
+  auto-scroll: true
+  &save: true
+  &autoOpen: false
+
+  MiniWindowContents
+    padding-left: 10
+    padding-right: 10
+    margin-top: 18
+    layout: verticalBox
+
+  MiniBroder
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    margin-bottom: 2
+    margin-left: 2
+
+  Label
+    id: sessionLabel
+    !text: tr('Session')
+    font: verdana-11px-antialised
+    color: #afafaf
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-left: 15
+    margin-top: 25
+
+  Label
+    id: expValuePerHourLabel
+    !text: tr('Exp/h')
+    font: verdana-11px-antialised
+    color: #afafaf
+    anchors.top: prev.bottom
+    anchors.left: prev.left
+    margin-top: 5
+
+  Label
+    id: expValueLabel
+    !text: tr('Exp Gained')
+    font: verdana-11px-antialised
+    color: #afafaf
+    anchors.top: prev.bottom
+    anchors.left: prev.left
+    margin-top: 5
+
+  Label
+    id: nextLevelLabel
+    !text: tr('Exp to Level')
+    font: verdana-11px-antialised
+    color: #afafaf
+    anchors.top: prev.bottom
+    anchors.left: prev.left
+    margin-top: 5
+
+  Label
+    id: timetoLevelLabel
+    !text: tr('Time to Level')
+    font: verdana-11px-antialised
+    color: #afafaf
+    anchors.top: prev.bottom
+    anchors.left: prev.left
+    margin-top: 5
+
+  HorizontalSeparator
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 3
+    margin-left: 10
+    margin-right: 10
+
+  Label
+    id: sessionAmount
+    font: verdana-11px-antialised
+    color: #afafaf
+    anchors.top: sessionLabel.top
+    anchors.right: parent.right
+    margin-right: 15
+
+  Label
+    id: expValuePerHourAmount
+    color: #1ffc02
+    text-align: right
+    font: verdana-11px-antialised
+    anchors.top: prev.bottom
+    anchors.right: prev.right
+    margin-top: 5
+
+  Label
+    id: expValueAmount
+    color: #c7e90a
+    text-align: right
+    font: verdana-11px-antialised
+    anchors.top: prev.bottom
+    anchors.right: prev.right
+    margin-top: 5
+
+  Label
+    id: nextLevelAmount
+    color: #ff9600
+    text-align: right
+    font: verdana-11px-antialised
+    anchors.top: prev.bottom
+    anchors.right: prev.right
+    margin-top: 5
+
+  Label
+    id: timetoLevelAmount
+    color: #e86363
+    text-align: right
+    font: verdana-11px-antialised
+    anchors.top: prev.bottom
+    anchors.right: prev.right
+    margin-top: 5
